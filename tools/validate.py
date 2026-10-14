@@ -13,6 +13,16 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 KINDS = ('privacy-policy', 'terms-of-service')
+DRAFT_NOTICES = {
+    'en': 'Status: Draft',
+    'zh-CN': '状态：待发布草案',
+    'zh-Hans': '状态：待发布草案',
+    'zh-Hant': '狀態：待發布草案',
+    'ja': '状態：公開に向けた草案（未発効）',
+    'ko': '상태: 게시를 위한 초안(아직 효력이 없음)',
+    'es': 'Estado: Borrador para publicación (todavía no vigente)',
+    'pt': 'Estado: Rascunho para publicação (ainda sem vigência)',
+}
 
 
 def check(condition, message):
@@ -90,7 +100,7 @@ def validate():
                     check(policy['effective_date'] is None, f'Draft has effective date: {label}')
                     check(policy['version'] in text, f'Draft version mismatch: {label}')
                     check(policy['updated_date'] in text, f'Draft date mismatch: {label}')
-                    check('Status: Draft' in text or '状态：待发布草案' in text, f'Draft notice absent: {label}')
+                    check(locale in DRAFT_NOTICES and DRAFT_NOTICES[locale] in text, f'Draft notice absent: {label}')
                 count += 1
         for alias, target in game.get('language_aliases', {}).items():
             check(alias in game['locales'] and target in game['locales'], f'Invalid language alias: {game_id}')

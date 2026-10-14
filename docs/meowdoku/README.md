@@ -5,13 +5,13 @@
 - 各语言目录中的 privacy-policy.md 是规范文本，内容逐字节保留；生效日期仍为 2026-10-07。
 - zh-CN 为规范简体中文目录；zh-Hans 保留为同内容兼容目录。其余语言为 en、zh-Hant、ja、ko、es、pt。
 - privacy/ 与 index.html 保留原始静态站点，不改语言匹配、查询参数或相对链接。新站点从 /docs 发布后，可在站点的 meowdoku/ 路径访问（URL 不包含 docs 或 games），支持 ?lang=en、?lang=zh-Hant 和 ?select=1。
-- 旧仓库没有服务条款。2026-10-14 新增 zh-CN、en 和 zh-Hans 服务条款，版本为 1.0.0-draft，effective_date 为 null；其他语言仍为 missing。新增条款是待发布草案，不属于原协议迁移内容。
+- 旧仓库没有服务条款。2026-10-14 新增全部已支持语言的服务条款（zh-CN、zh-Hans、zh-Hant、en、ja、ko、es、pt），版本为 1.0.0-draft，effective_date 为 null。新增条款是待发布草案，不属于原协议迁移内容。
 - 目前规范 Markdown 与兼容网页手工同步；修改隐私文本时同步对应 privacy/{语言}.md 和 .html，并运行验证。
 - 旧线上地址仍为 https://itozll.github.io/meowdoku-legal/；未修改旧站点或游戏链接，也未声称新站点已发布。
 
 ## 服务条款草案
 
-- [中文服务条款](zh-CN/terms-of-service.md) / [English terms](en/terms-of-service.md) / [简体兼容别名](zh-Hans/terms-of-service.md)
+- [简体中文](zh-CN/terms-of-service.md) / [繁體中文](zh-Hant/terms-of-service.md) / [English](en/terms-of-service.md) / [日本語](ja/terms-of-service.md) / [한국어](ko/terms-of-service.md) / [Español](es/terms-of-service.md) / [Português](pt/terms-of-service.md) / [简体兼容别名](zh-Hans/terms-of-service.md)
 - 本地存档、无账号/云存档/支付、插屏及激励视频奖励等功能描述以本仓库现有隐私政策为依据；本次没有重新核验游戏版本或宿主供应链。
 - 开发者名称 gaoguodong 与邮箱 joiky@163.com 来自现有隐私政策；不据此推断注册地、法律实体类型或专属管辖法院。
 - 本次仅添加规范 Markdown 草案，未生成服务条款 HTML 或修改现有隐私网页。启用 .nojekyll 时 Markdown 不会自动成为 HTML 页面。

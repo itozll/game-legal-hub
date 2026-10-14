@@ -23,10 +23,15 @@ game-legal-hub/
 │       ├── zh-Hans/privacy-policy.md
 │       ├── zh-Hans/terms-of-service.md
 │       ├── zh-Hant/privacy-policy.md
+│       ├── zh-Hant/terms-of-service.md
 │       ├── ja/privacy-policy.md
+│       ├── ja/terms-of-service.md
 │       ├── ko/privacy-policy.md
+│       ├── ko/terms-of-service.md
 │       ├── es/privacy-policy.md
+│       ├── es/terms-of-service.md
 │       ├── pt/privacy-policy.md
+│       ├── pt/terms-of-service.md
 │       ├── privacy/          # 原始多语言网页与资产
 │       ├── index.html        # 保留语言入口
 │       └── README.md
@@ -41,13 +46,13 @@ game-legal-hub/
 
 | 游戏 | 语言 | 隐私政策 | 服务条款 |
 | --- | --- | --- | --- |
-| Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt | 原文迁入，生效日期 2026-10-07 | 中英及 zh-Hans：1.0.0-draft，未生效；其他语言 missing |
+| Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt | 原文迁入，生效日期 2026-10-07 | 全部已支持语言：1.0.0-draft，未生效 |
 | Ring Titan | zh-CN、en | 1.0.0-draft，未生效 | 1.0.0-draft，未生效 |
 
 - [Ring Titan 中文隐私政策](docs/ring-titan/zh-CN/privacy-policy.md) / [English](docs/ring-titan/en/privacy-policy.md)
 - [Ring Titan 中文服务条款](docs/ring-titan/zh-CN/terms-of-service.md) / [English](docs/ring-titan/en/terms-of-service.md)
 - [Ring Titan 发布核对说明](docs/ring-titan/README.md)
-- [Meow Garden 中文服务条款草案](docs/meowdoku/zh-CN/terms-of-service.md) / [English draft](docs/meowdoku/en/terms-of-service.md)
+- Meow Garden 服务条款草案：[简体中文](docs/meowdoku/zh-CN/terms-of-service.md) / [English](docs/meowdoku/en/terms-of-service.md) / [繁體中文](docs/meowdoku/zh-Hant/terms-of-service.md) / [日本語](docs/meowdoku/ja/terms-of-service.md) / [한국어](docs/meowdoku/ko/terms-of-service.md) / [Español](docs/meowdoku/es/terms-of-service.md) / [Português](docs/meowdoku/pt/terms-of-service.md) / [zh-Hans](docs/meowdoku/zh-Hans/terms-of-service.md)
 - [Meow Garden 迁移说明](docs/meowdoku/README.md)
 
 ## 登记表规则

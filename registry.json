@@ -69,11 +69,11 @@
             "path": "docs/meowdoku/zh-Hant/privacy-policy.md"
           },
           "terms-of-service": {
-            "status": "missing",
-            "version": null,
-            "updated_date": null,
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": null
+            "path": "docs/meowdoku/zh-Hant/terms-of-service.md"
           }
         },
         "ja": {
@@ -85,11 +85,11 @@
             "path": "docs/meowdoku/ja/privacy-policy.md"
           },
           "terms-of-service": {
-            "status": "missing",
-            "version": null,
-            "updated_date": null,
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": null
+            "path": "docs/meowdoku/ja/terms-of-service.md"
           }
         },
         "ko": {
@@ -101,11 +101,11 @@
             "path": "docs/meowdoku/ko/privacy-policy.md"
           },
           "terms-of-service": {
-            "status": "missing",
-            "version": null,
-            "updated_date": null,
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": null
+            "path": "docs/meowdoku/ko/terms-of-service.md"
           }
         },
         "es": {
@@ -117,11 +117,11 @@
             "path": "docs/meowdoku/es/privacy-policy.md"
           },
           "terms-of-service": {
-            "status": "missing",
-            "version": null,
-            "updated_date": null,
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": null
+            "path": "docs/meowdoku/es/terms-of-service.md"
           }
         },
         "pt": {
@@ -133,11 +133,11 @@
             "path": "docs/meowdoku/pt/privacy-policy.md"
           },
           "terms-of-service": {
-            "status": "missing",
-            "version": null,
-            "updated_date": null,
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": null
+            "path": "docs/meowdoku/pt/terms-of-service.md"
           }
         }
       }
