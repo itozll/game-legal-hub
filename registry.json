@@ -6,7 +6,7 @@
       "name": "Meow Garden",
       "migration_source": "meowdoku-legal",
       "source_revision": "6703701f5b2479166c140ef619bb65a46b3e7fad",
-      "legacy_entry": "games/meowdoku/index.html",
+      "legacy_entry": "docs/meowdoku/index.html",
       "previous_site": "https://itozll.github.io/meowdoku-legal/",
       "language_aliases": {
         "zh-Hans": "zh-CN"
@@ -18,7 +18,7 @@
             "version": "2026-10-07",
             "updated_date": "2026-10-07",
             "effective_date": "2026-10-07",
-            "path": "games/meowdoku/zh-CN/privacy-policy.md"
+            "path": "docs/meowdoku/zh-CN/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "missing",
@@ -34,7 +34,7 @@
             "version": "2026-10-07",
             "updated_date": "2026-10-07",
             "effective_date": "2026-10-07",
-            "path": "games/meowdoku/en/privacy-policy.md"
+            "path": "docs/meowdoku/en/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "missing",
@@ -50,7 +50,7 @@
             "version": "2026-10-07",
             "updated_date": "2026-10-07",
             "effective_date": "2026-10-07",
-            "path": "games/meowdoku/zh-Hans/privacy-policy.md"
+            "path": "docs/meowdoku/zh-Hans/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "missing",
@@ -66,7 +66,7 @@
             "version": "2026-10-07",
             "updated_date": "2026-10-07",
             "effective_date": "2026-10-07",
-            "path": "games/meowdoku/zh-Hant/privacy-policy.md"
+            "path": "docs/meowdoku/zh-Hant/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "missing",
@@ -82,7 +82,7 @@
             "version": "2026-10-07",
             "updated_date": "2026-10-07",
             "effective_date": "2026-10-07",
-            "path": "games/meowdoku/ja/privacy-policy.md"
+            "path": "docs/meowdoku/ja/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "missing",
@@ -98,7 +98,7 @@
             "version": "2026-10-07",
             "updated_date": "2026-10-07",
             "effective_date": "2026-10-07",
-            "path": "games/meowdoku/ko/privacy-policy.md"
+            "path": "docs/meowdoku/ko/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "missing",
@@ -114,7 +114,7 @@
             "version": "2026-10-07",
             "updated_date": "2026-10-07",
             "effective_date": "2026-10-07",
-            "path": "games/meowdoku/es/privacy-policy.md"
+            "path": "docs/meowdoku/es/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "missing",
@@ -130,7 +130,7 @@
             "version": "2026-10-07",
             "updated_date": "2026-10-07",
             "effective_date": "2026-10-07",
-            "path": "games/meowdoku/pt/privacy-policy.md"
+            "path": "docs/meowdoku/pt/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "missing",
@@ -153,14 +153,14 @@
             "version": "1.0.0-draft",
             "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": "games/ring-titan/zh-CN/privacy-policy.md"
+            "path": "docs/ring-titan/zh-CN/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "draft",
             "version": "1.0.0-draft",
             "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": "games/ring-titan/zh-CN/terms-of-service.md"
+            "path": "docs/ring-titan/zh-CN/terms-of-service.md"
           }
         },
         "en": {
@@ -169,14 +169,14 @@
             "version": "1.0.0-draft",
             "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": "games/ring-titan/en/privacy-policy.md"
+            "path": "docs/ring-titan/en/privacy-policy.md"
           },
           "terms-of-service": {
             "status": "draft",
             "version": "1.0.0-draft",
             "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": "games/ring-titan/en/terms-of-service.md"
+            "path": "docs/ring-titan/en/terms-of-service.md"
           }
         }
       }

@@ -43,6 +43,9 @@ class Links(HTMLParser):
 def validate():
     registry = json.loads((ROOT / 'registry.json').read_text(encoding='utf-8'))
     check(registry['schema_version'] == 1, 'Unsupported schema version')
+    check((ROOT / 'docs/.nojekyll').is_file(), 'Missing publishing .nojekyll')
+    check((ROOT / 'docs/index.html').is_file(), 'Missing publishing index')
+    check(not (ROOT / 'games').exists(), 'Obsolete games directory')
     ids = set()
     paths = set()
     count = 0
@@ -63,7 +66,7 @@ def validate():
                 if status == 'missing':
                     check(all(policy[key] is None for key in ('path', 'version', 'updated_date', 'effective_date')), f'Missing policy has metadata: {label}')
                     continue
-                expected = f'games/{game_id}/{locale}/{kind}.md'
+                expected = f'docs/{game_id}/{locale}/{kind}.md'
                 check(policy['path'] == expected, f'Unexpected path: {label}')
                 path = inside(ROOT / expected)
                 check(path.is_file(), f'File missing: {expected}')
@@ -97,10 +100,10 @@ def validate():
                 check(first['status'] == second['status'], f'Alias status mismatch: {game_id}/{kind}')
                 if first['path']:
                     check((ROOT / first['path']).read_text(encoding='utf-8') == (ROOT / second['path']).read_text(encoding='utf-8'), f'Alias text mismatch: {game_id}/{kind}')
-    actual = {str(path.relative_to(ROOT)).replace('\\', '/') for path in (ROOT / 'games').glob('*/*/*.md') if path.stem in KINDS}
+    actual = {str(path.relative_to(ROOT)).replace('\\', '/') for path in (ROOT / 'docs').glob('*/*/*.md') if path.stem in KINDS}
     check(actual == paths, f'Unregistered or absent policies: {actual ^ paths}')
-    for path in (ROOT / 'games/meowdoku').glob('*/privacy-policy.md'):
-        original = ROOT / 'games/meowdoku/privacy' / (path.parent.name + '.md')
+    for path in (ROOT / 'docs/meowdoku').glob('*/privacy-policy.md'):
+        original = ROOT / 'docs/meowdoku/privacy' / (path.parent.name + '.md')
         check(path.read_bytes() == original.read_bytes(), f'Canonical and legacy text differ: {path}')
     for path in ROOT.rglob('*'):
         if not path.is_file() or path.suffix not in ('.md', '.html') or '.git' in path.parts:
@@ -125,13 +128,13 @@ def validate():
 def validate_migration(source):
     source = source.resolve()
     check((source / 'privacy').is_dir(), f'Invalid migration source: {source}')
-    pairs = [(source / 'index.html', ROOT / 'games/meowdoku/index.html'), (source / '.nojekyll', ROOT / '.nojekyll')]
-    pairs += [(path, ROOT / 'games/meowdoku/privacy' / path.relative_to(source / 'privacy')) for path in (source / 'privacy').rglob('*') if path.is_file()]
+    pairs = [(source / 'index.html', ROOT / 'docs/meowdoku/index.html'), (source / '.nojekyll', ROOT / 'docs/.nojekyll')]
+    pairs += [(path, ROOT / 'docs/meowdoku/privacy' / path.relative_to(source / 'privacy')) for path in (source / 'privacy').rglob('*') if path.is_file()]
     for original, copied in pairs:
         check(copied.is_file() and original.read_bytes() == copied.read_bytes(), f'Migration differs: {original.name}')
     for path in (source / 'privacy').glob('*.md'):
         if path.stem != 'README':
-            canonical = ROOT / 'games/meowdoku' / path.stem / 'privacy-policy.md'
+            canonical = ROOT / 'docs/meowdoku' / path.stem / 'privacy-policy.md'
             check(canonical.is_file() and canonical.read_bytes() == path.read_bytes(), f'Locale migration differs: {path.stem}')
     return len(pairs)
 

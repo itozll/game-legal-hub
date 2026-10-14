@@ -2,7 +2,7 @@
 
 - 本目录为独立 Git 仓库。没有明确跨仓库指令时，只读取本项目设置目录。
 - 直接在当前分支工作；未经要求，不新建分支、worktree 或 PR。
-- 协议规范文本放 games/{游戏}/{语言}/privacy-policy.md 与 terms-of-service.md；公共模板放 templates/{语言}/。
+- 协议规范文本放 docs/{游戏}/{语言}/privacy-policy.md 与 terms-of-service.md；公共模板放 templates/{语言}/。
 - 同步维护 registry.json 中的游戏名、语言、版本、更新日期、生效日期和状态。draft 的生效日期为 null；missing 不填写文件路径、版本或日期。
 - 不把广告计划、SDK 文档或未核实的宿主行为写成游戏已上线能力。事实须有游戏代码或服务方文档依据。
 - 迁移保留原语言、日期、正文和静态网页资产，不删除旧仓库或修改旧线上链接，除非用户明确要求。

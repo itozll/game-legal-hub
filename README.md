@@ -4,7 +4,9 @@
 
 ```text
 game-legal-hub/
-├── games/
+├── docs/
+│   ├── .nojekyll            # 禁用 Jekyll，保留静态网页
+│   ├── index.html           # 协议中心入口
 │   ├── ring-titan/
 │   │   ├── zh-CN/
 │   │   │   ├── privacy-policy.md
@@ -39,10 +41,10 @@ game-legal-hub/
 | Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt | 原文迁入，生效日期 2026-10-07 | 原仓库未提供（missing） |
 | Ring Titan | zh-CN、en | 1.0.0-draft，未生效 | 1.0.0-draft，未生效 |
 
-- [Ring Titan 中文隐私政策](games/ring-titan/zh-CN/privacy-policy.md) / [English](games/ring-titan/en/privacy-policy.md)
-- [Ring Titan 中文服务条款](games/ring-titan/zh-CN/terms-of-service.md) / [English](games/ring-titan/en/terms-of-service.md)
-- [Ring Titan 发布核对说明](games/ring-titan/README.md)
-- [Meow Garden 迁移说明](games/meowdoku/README.md)
+- [Ring Titan 中文隐私政策](docs/ring-titan/zh-CN/privacy-policy.md) / [English](docs/ring-titan/en/privacy-policy.md)
+- [Ring Titan 中文服务条款](docs/ring-titan/zh-CN/terms-of-service.md) / [English](docs/ring-titan/en/terms-of-service.md)
+- [Ring Titan 发布核对说明](docs/ring-titan/README.md)
+- [Meow Garden 迁移说明](docs/meowdoku/README.md)
 
 ## 登记表规则
 
@@ -68,6 +70,14 @@ python -X utf8 tools/validate.py --migration-source ../meowdoku-legal
 
 ## 发布与旧链接
 
-本次迁移保留原静态网页及 .nojekyll。新仓库尚未配置或部署 GitHub Pages；不把预期 URL 当作已上线地址。若之后配置从仓库根发布，Meow Garden 静态入口相对路径为 games/meowdoku/，原 ?lang= 和 ?select=1 行为仍保留。Ring Titan 当前只有 Markdown 草案，没有发布网页。
+发布内容位于 docs/，其中 docs/.nojekyll 保留静态网页并禁用 Jekyll。GitHub Pages 设置选择 Deploy from a branch，分支 main，目录 /docs，点击 Save。发布根目录 docs 不出现在 URL 中，也没有 games 路径段。
+
+部署后的预期地址（尚未验证上线）：
+
+- 协议中心：https://itozll.github.io/game-legal-hub/
+- Meow Garden：https://itozll.github.io/game-legal-hub/meowdoku/
+- 英文隐私网页：https://itozll.github.io/game-legal-hub/meowdoku/privacy/en.html
+
+原 ?lang= 和 ?select=1 行为仍保留。Ring Titan 当前只有 Markdown 草案，没有发布网页；.nojekyll 模式不会自动把 Markdown 转换为 HTML。
 
 旧 https://itozll.github.io/meowdoku-legal/ 及 /privacy/ 链接保留；未删除旧仓库、未修改旧站点或游戏内协议链接。新站点确认可访问后再单独切换入口。
