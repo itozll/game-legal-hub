@@ -17,8 +17,11 @@ game-legal-hub/
 │   │   └── README.md
 │   └── meowdoku/
 │       ├── zh-CN/privacy-policy.md
+│       ├── zh-CN/terms-of-service.md
 │       ├── en/privacy-policy.md
+│       ├── en/terms-of-service.md
 │       ├── zh-Hans/privacy-policy.md
+│       ├── zh-Hans/terms-of-service.md
 │       ├── zh-Hant/privacy-policy.md
 │       ├── ja/privacy-policy.md
 │       ├── ko/privacy-policy.md
@@ -38,12 +41,13 @@ game-legal-hub/
 
 | 游戏 | 语言 | 隐私政策 | 服务条款 |
 | --- | --- | --- | --- |
-| Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt | 原文迁入，生效日期 2026-10-07 | 原仓库未提供（missing） |
+| Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt | 原文迁入，生效日期 2026-10-07 | 中英及 zh-Hans：1.0.0-draft，未生效；其他语言 missing |
 | Ring Titan | zh-CN、en | 1.0.0-draft，未生效 | 1.0.0-draft，未生效 |
 
 - [Ring Titan 中文隐私政策](docs/ring-titan/zh-CN/privacy-policy.md) / [English](docs/ring-titan/en/privacy-policy.md)
 - [Ring Titan 中文服务条款](docs/ring-titan/zh-CN/terms-of-service.md) / [English](docs/ring-titan/en/terms-of-service.md)
 - [Ring Titan 发布核对说明](docs/ring-titan/README.md)
+- [Meow Garden 中文服务条款草案](docs/meowdoku/zh-CN/terms-of-service.md) / [English draft](docs/meowdoku/en/terms-of-service.md)
 - [Meow Garden 迁移说明](docs/meowdoku/README.md)
 
 ## 登记表规则

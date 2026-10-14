@@ -21,11 +21,11 @@
             "path": "docs/meowdoku/zh-CN/privacy-policy.md"
           },
           "terms-of-service": {
-            "status": "missing",
-            "version": null,
-            "updated_date": null,
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": null
+            "path": "docs/meowdoku/zh-CN/terms-of-service.md"
           }
         },
         "en": {
@@ -37,11 +37,11 @@
             "path": "docs/meowdoku/en/privacy-policy.md"
           },
           "terms-of-service": {
-            "status": "missing",
-            "version": null,
-            "updated_date": null,
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": null
+            "path": "docs/meowdoku/en/terms-of-service.md"
           }
         },
         "zh-Hans": {
@@ -53,11 +53,11 @@
             "path": "docs/meowdoku/zh-Hans/privacy-policy.md"
           },
           "terms-of-service": {
-            "status": "missing",
-            "version": null,
-            "updated_date": null,
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
             "effective_date": null,
-            "path": null
+            "path": "docs/meowdoku/zh-Hans/terms-of-service.md"
           }
         },
         "zh-Hant": {
