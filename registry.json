@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "games": [
+    {
+      "id": "meowdoku",
+      "name": "Meow Garden",
+      "migration_source": "meowdoku-legal",
+      "source_revision": "6703701f5b2479166c140ef619bb65a46b3e7fad",
+      "legacy_entry": "games/meowdoku/index.html",
+      "previous_site": "https://itozll.github.io/meowdoku-legal/",
+      "language_aliases": {
+        "zh-Hans": "zh-CN"
+      },
+      "locales": {
+        "zh-CN": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-07",
+            "updated_date": "2026-10-07",
+            "effective_date": "2026-10-07",
+            "path": "games/meowdoku/zh-CN/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "en": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-07",
+            "updated_date": "2026-10-07",
+            "effective_date": "2026-10-07",
+            "path": "games/meowdoku/en/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "zh-Hans": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-07",
+            "updated_date": "2026-10-07",
+            "effective_date": "2026-10-07",
+            "path": "games/meowdoku/zh-Hans/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "zh-Hant": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-07",
+            "updated_date": "2026-10-07",
+            "effective_date": "2026-10-07",
+            "path": "games/meowdoku/zh-Hant/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "ja": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-07",
+            "updated_date": "2026-10-07",
+            "effective_date": "2026-10-07",
+            "path": "games/meowdoku/ja/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "ko": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-07",
+            "updated_date": "2026-10-07",
+            "effective_date": "2026-10-07",
+            "path": "games/meowdoku/ko/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "es": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-07",
+            "updated_date": "2026-10-07",
+            "effective_date": "2026-10-07",
+            "path": "games/meowdoku/es/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "pt": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-07",
+            "updated_date": "2026-10-07",
+            "effective_date": "2026-10-07",
+            "path": "games/meowdoku/pt/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        }
+      }
+    },
+    {
+      "id": "ring-titan",
+      "name": "Ring Titan",
+      "source_revision": "e1ac50df8a36b37cf4c87001232c06cc72b608da",
+      "locales": {
+        "zh-CN": {
+          "privacy-policy": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
+            "effective_date": null,
+            "path": "games/ring-titan/zh-CN/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
+            "effective_date": null,
+            "path": "games/ring-titan/zh-CN/terms-of-service.md"
+          }
+        },
+        "en": {
+          "privacy-policy": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
+            "effective_date": null,
+            "path": "games/ring-titan/en/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-14",
+            "effective_date": null,
+            "path": "games/ring-titan/en/terms-of-service.md"
+          }
+        }
+      }
+    }
+  ]
+}
