@@ -87,6 +87,6 @@ python -X utf8 tools/validate.py --migration-source ../meowdoku-legal
 - Meow Garden：https://itozll.github.io/game-legal-hub/meowdoku/
 - 英文隐私网页：https://itozll.github.io/game-legal-hub/meowdoku/privacy/en.html
 
-原 ?lang= 和 ?select=1 行为仍保留。Ring Titan 当前只有 Markdown 草案，没有发布网页；.nojekyll 模式不会自动把 Markdown 转换为 HTML。
+原 ?lang= 和 ?select=1 行为仍保留。Ring Titan 已提供由 Markdown 草案生成的中英文 HTML 阅读页，入口为 https://itozll.github.io/game-legal-hub/ring-titan/ 。网页保留草案状态，未改生效日期；修改规范文本时须同步对应 HTML。
 
 旧 https://itozll.github.io/meowdoku-legal/ 及 /privacy/ 链接保留；未删除旧仓库、未修改旧站点或游戏内协议链接。新站点确认可访问后再单独切换入口。
