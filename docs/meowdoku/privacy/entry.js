@@ -1,6 +1,6 @@
 (() => {
     'use strict';
-    const supported = ['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko', 'es', 'pt'];
+    const supported = ['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko', 'es', 'pt', 'ru'];
     function matchLocale(value) {
         const tag = String(value || '').trim().toLowerCase().replace(/_/g, '-');
         if (/^zh(?:-|$)/.test(tag)) {

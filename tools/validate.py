@@ -2,6 +2,7 @@
 
 Run: python -X utf8 tools/validate.py [--migration-source ../meowdoku-legal]
 Only --migration-source permits reading a sibling repository.
+Use it immediately after migration to verify the original Git snapshot.
 """
 import argparse
 import datetime as dt
@@ -9,6 +10,8 @@ from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
+import hashlib
+import subprocess
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -94,8 +97,10 @@ def validate():
                     ko_date = f'{effective.year}년 {effective.month}월 {effective.day}일'
                     es_months = ('enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre')
                     pt_months = ('janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro')
+                    ru_months = ('января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря')
+                    ru_date = f'{effective.day} {ru_months[effective.month-1]} {effective.year} года'
                     romance_dates = tuple(f'{effective.day} de {months[effective.month-1]} de {effective.year}' for months in (es_months,pt_months))
-                    check(any(value in text for value in (policy['effective_date'], en_date, zh_date, ko_date, *romance_dates)), f'Effective date absent from text: {label}')
+                    check(any(value in text for value in (policy['effective_date'], en_date, zh_date, ko_date, ru_date, *romance_dates)), f'Effective date absent from text: {label}')
                 else:
                     check(policy['effective_date'] is None, f'Draft has effective date: {label}')
                     check(policy['version'] in text, f'Draft version mismatch: {label}')
@@ -137,16 +142,23 @@ def validate():
 
 def validate_migration(source):
     source = source.resolve()
+    manifest_path = ROOT / 'references/meowdoku/cocos-migration.json'
+    if source.name == 'meowdoku-cocos':
+        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+        for record in manifest['files']:
+            # The working tree now contains redirects; compare the pre-migration Git snapshot.
+            original = subprocess.check_output(['git', '-C', str(source), 'show', manifest['source_revision'] + ':' + record['source']])
+            check(hashlib.sha256(original).hexdigest() == record['sha256'], f'Source snapshot mismatch: {record["source"]}')
+            for target in record['targets']:
+                check(original == inside(ROOT / target).read_bytes(), f'Migration differs: {target}')
+        return len(manifest['files'])
     check((source / 'privacy').is_dir(), f'Invalid migration source: {source}')
-    pairs = [(source / 'index.html', ROOT / 'docs/meowdoku/index.html'), (source / '.nojekyll', ROOT / 'docs/.nojekyll')]
-    pairs += [(path, ROOT / 'docs/meowdoku/privacy' / path.relative_to(source / 'privacy')) for path in (source / 'privacy').rglob('*') if path.is_file()]
-    for original, copied in pairs:
-        check(copied.is_file() and original.read_bytes() == copied.read_bytes(), f'Migration differs: {original.name}')
-    for path in (source / 'privacy').glob('*.md'):
-        if path.stem != 'README':
-            canonical = ROOT / 'docs/meowdoku' / path.stem / 'privacy-policy.md'
-            check(canonical.is_file() and canonical.read_bytes() == path.read_bytes(), f'Locale migration differs: {path.stem}')
-    return len(pairs)
+    # Original text remains unchanged; generated HTML now includes the added Russian locale.
+    originals = [path for path in (source / 'privacy').glob('*.md') if path.stem != 'README']
+    for path in originals:
+        canonical = ROOT / 'docs/meowdoku' / path.stem / 'privacy-policy.md'
+        check(canonical.is_file() and canonical.read_bytes() == path.read_bytes(), f'Locale migration differs: {path.stem}')
+    return len(originals)
 
 
 if __name__ == '__main__':
@@ -158,6 +170,6 @@ if __name__ == '__main__':
         print(f'OK: registry, {count} policies, statuses, dates, aliases and local links')
         if args.migration_source:
             files = validate_migration(args.migration_source)
-            print(f'OK: {files} original site files and all locale texts preserved byte-for-byte')
+            print(f'OK: {files} original policy/template files preserved byte-for-byte')
     except (ValueError, KeyError, TypeError, OSError) as error:
         parser.exit(1, f'Validation failed: {error}\n')

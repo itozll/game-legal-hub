@@ -1,0 +1,86 @@
+{
+  "source_repository": "https://github.com/itozll/meowdoku-cocos.git",
+  "source_revision": "50d3e308465fff19f3ac89fc363e91725d015ae6",
+  "migrated_date": "2026-10-16",
+  "files": [
+    {
+      "source": "docs/privacy/en.md",
+      "targets": [
+        "docs/meowdoku/en/privacy-policy.md",
+        "docs/meowdoku/privacy/en.md"
+      ],
+      "sha256": "997fbcff0a1d03a7158dee7c9bfba9287266fc31464b0d9153b04f7105308837"
+    },
+    {
+      "source": "docs/privacy/zh-Hans.md",
+      "targets": [
+        "docs/meowdoku/zh-Hans/privacy-policy.md",
+        "docs/meowdoku/privacy/zh-Hans.md"
+      ],
+      "sha256": "b6539f4852c70cedc1f42764f8774fa94731a79afc1911ecbad25df7dd68054a"
+    },
+    {
+      "source": "docs/privacy/zh-Hant.md",
+      "targets": [
+        "docs/meowdoku/zh-Hant/privacy-policy.md",
+        "docs/meowdoku/privacy/zh-Hant.md"
+      ],
+      "sha256": "3d67d2c038fc305dffc13a153cda956ebf90bac32e65706133ad1f7e3fe14058"
+    },
+    {
+      "source": "docs/privacy/ja.md",
+      "targets": [
+        "docs/meowdoku/ja/privacy-policy.md",
+        "docs/meowdoku/privacy/ja.md"
+      ],
+      "sha256": "84d083df730c76ad7946c3b177574f77753d950c7850b8a00c18ec9e5b3b235d"
+    },
+    {
+      "source": "docs/privacy/ko.md",
+      "targets": [
+        "docs/meowdoku/ko/privacy-policy.md",
+        "docs/meowdoku/privacy/ko.md"
+      ],
+      "sha256": "67865a8277601f4f4c29d843f25fceb310d50a81ba6912d62db80a145038d062"
+    },
+    {
+      "source": "docs/privacy/es.md",
+      "targets": [
+        "docs/meowdoku/es/privacy-policy.md",
+        "docs/meowdoku/privacy/es.md"
+      ],
+      "sha256": "7db27f28329698ec690488df2faad55ddf9641aee7c40db55a5e2093f80217c3"
+    },
+    {
+      "source": "docs/privacy/pt.md",
+      "targets": [
+        "docs/meowdoku/pt/privacy-policy.md",
+        "docs/meowdoku/privacy/pt.md"
+      ],
+      "sha256": "428a2fdbda7f076b3cbeb6e87f08203ae313daa734305b92e4850ba98d28b445"
+    },
+    {
+      "source": "docs/privacy/ru.md",
+      "targets": [
+        "docs/meowdoku/ru/privacy-policy.md",
+        "docs/meowdoku/privacy/ru.md"
+      ],
+      "sha256": "dc86d9640aa5432430cc19ea36141397547fb9f5d5556750410e6322354fb8d0"
+    },
+    {
+      "source": "docs/privacy/zh-CN.md",
+      "targets": [
+        "docs/meowdoku/zh-CN/privacy-policy.md",
+        "docs/meowdoku/privacy/zh-CN.md"
+      ],
+      "sha256": "b6539f4852c70cedc1f42764f8774fa94731a79afc1911ecbad25df7dd68054a"
+    },
+    {
+      "source": "docs/用户隐私保护指引设置.docx",
+      "targets": [
+        "references/meowdoku/用户隐私保护指引设置.docx"
+      ],
+      "sha256": "348bd7bf4d96aee708be487784e5cd38e2f58ecf4fcf62c392931388c01a505b"
+    }
+  ]
+}

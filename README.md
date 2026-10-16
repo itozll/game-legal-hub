@@ -32,11 +32,14 @@ game-legal-hub/
 │       ├── es/terms-of-service.md
 │       ├── pt/privacy-policy.md
 │       ├── pt/terms-of-service.md
+│       ├── ru/privacy-policy.md
 │       ├── privacy/          # 原始多语言网页与资产
 │       ├── index.html        # 保留语言入口
 │       └── README.md
 ├── templates/               # zh-CN、en 共用协议模板
-├── tools/validate.py
+├── tools/                   # 网页生成与校验
+├── tests/                   # 协议入口语言路由
+├── references/meowdoku/     # 原始模板与迁移校验清单（非发布内容）
 ├── registry.json
 ├── AGENTS.md
 └── README.md
@@ -46,7 +49,7 @@ game-legal-hub/
 
 | 游戏 | 语言 | 隐私政策 | 服务条款 |
 | --- | --- | --- | --- |
-| Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt | 原文迁入，生效日期 2026-10-07 | 全部已支持语言：1.0.0-draft，未生效 |
+| Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt、ru | 原文迁入，生效日期 2026-10-07；俄语译文更新于 2026-10-14 | 原七种语言及简体别名：1.0.0-draft，未生效；俄语 missing |
 | Ring Titan | zh-CN、en | 1.0.0-draft，未生效 | 1.0.0-draft，未生效 |
 
 - [Ring Titan 中文隐私政策](docs/ring-titan/zh-CN/privacy-policy.md) / [English](docs/ring-titan/en/privacy-policy.md)
@@ -68,12 +71,14 @@ registry.json 的 schema_version 为 1。games 记录稳定游戏 id、展示名
 ## 维护与验证
 
 ```sh
+python -X utf8 tools/build-meowdoku-privacy.py
 python -X utf8 tools/validate.py
-# 初次迁移还核对原始内容（需要明确授权访问旧仓库）
-python -X utf8 tools/validate.py --migration-source ../meowdoku-legal
+node --test tests/meowdoku-privacy-entry.test.cjs
+# 需要明确授权访问源仓库；使用迁移前 Git 快照核对已移除的正文与模板
+python -X utf8 tools/validate.py --migration-source ../meowdoku-cocos
 ```
 
-维护规范 Markdown 时同步 registry.json。Meow Garden 兼容网站仍按原方式手工同步 privacy/*.md 和 *.html；验证脚本检查登记数据、日期与状态、链接目标、简体别名、规范文本与兼容文本一致性，以及迁移字节一致性；不代替协议内容及 HTML 正文同步核对。
+维护规范 Markdown 时同步 registry.json。Meow Garden 隐私网页及兼容 Markdown 由生成脚本统一生成，不再手工修改；原始模板与迁移清单位于 references/meowdoku/。校验工具检查登记数据、日期、链接及简体别名；迁移时额外使用 --migration-source 核对原文及模板字节一致性。清单保留初次迁移的原始摘要，后续协议修订需正常更新版本、日期和核验记录，不应把新版正文伪称为原文迁移。
 
 发布 Ring Titan 前完成其发布核对说明，填入实际主体与联系方式、确认宿主与目标地区、更新生效日期并将中英文状态一起改为 published。
 
@@ -81,7 +86,7 @@ python -X utf8 tools/validate.py --migration-source ../meowdoku-legal
 
 发布内容位于 docs/，其中 docs/.nojekyll 保留静态网页并禁用 Jekyll。GitHub Pages 设置选择 Deploy from a branch，分支 main，目录 /docs，点击 Save。发布根目录 docs 不出现在 URL 中，也没有 games 路径段。
 
-部署后的预期地址（尚未验证上线）：
+发布入口：
 
 - 协议中心：https://itozll.github.io/game-legal-hub/
 - Meow Garden：https://itozll.github.io/game-legal-hub/meowdoku/

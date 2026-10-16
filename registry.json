@@ -139,8 +139,32 @@
             "effective_date": null,
             "path": "docs/meowdoku/pt/terms-of-service.md"
           }
+        },
+        "ru": {
+          "privacy-policy": {
+            "status": "published",
+            "version": "2026-10-14",
+            "updated_date": "2026-10-14",
+            "effective_date": "2026-10-07",
+            "path": "docs/meowdoku/ru/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
         }
-      }
+      },
+      "additional_migrations": [
+        {
+          "source": "meowdoku-cocos",
+          "source_revision": "50d3e308465fff19f3ac89fc363e91725d015ae6",
+          "date": "2026-10-16",
+          "manifest": "references/meowdoku/cocos-migration.json"
+        }
+      ]
     },
     {
       "id": "ring-titan",
