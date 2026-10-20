@@ -25,6 +25,7 @@ DRAFT_NOTICES = {
     'ko': '상태: 게시를 위한 초안(아직 효력이 없음)',
     'es': 'Estado: Borrador para publicación (todavía no vigente)',
     'pt': 'Estado: Rascunho para publicação (ainda sem vigência)',
+    'ru': 'Статус: Проект для публикации (ещё не вступил в силу)',
 }
 
 

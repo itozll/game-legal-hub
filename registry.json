@@ -202,6 +202,38 @@
             "effective_date": null,
             "path": "docs/ring-titan/en/terms-of-service.md"
           }
+        },
+        "es": {
+          "privacy-policy": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-20",
+            "effective_date": null,
+            "path": "docs/ring-titan/es/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "ru": {
+          "privacy-policy": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-20",
+            "effective_date": null,
+            "path": "docs/ring-titan/ru/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
         }
       }
     }

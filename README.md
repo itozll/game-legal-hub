@@ -50,7 +50,7 @@ game-legal-hub/
 | 游戏 | 语言 | 隐私政策 | 服务条款 |
 | --- | --- | --- | --- |
 | Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt、ru | 原文迁入，生效日期 2026-10-07；俄语译文更新于 2026-10-14 | 原七种语言及简体别名：1.0.0-draft，未生效；俄语 missing |
-| Ring Titan | zh-CN、en | 1.0.0-draft，未生效 | 1.0.0-draft，未生效 |
+| Ring Titan | zh-CN、en、es、ru | 1.0.0-draft，未生效 | 中英：1.0.0-draft，未生效；西俄：missing |
 
 - [Ring Titan 中文隐私政策](docs/ring-titan/zh-CN/privacy-policy.md) / [English](docs/ring-titan/en/privacy-policy.md)
 - [Ring Titan 中文服务条款](docs/ring-titan/zh-CN/terms-of-service.md) / [English](docs/ring-titan/en/terms-of-service.md)
@@ -95,3 +95,5 @@ python -X utf8 tools/validate.py --migration-source ../meowdoku-cocos
 原 ?lang= 和 ?select=1 行为仍保留。Ring Titan 已提供由 Markdown 草案生成的中英文 HTML 阅读页，入口为 https://itozll.github.io/game-legal-hub/ring-titan/ 。网页保留草案状态，未改生效日期；修改规范文本时须同步对应 HTML。协议阅读页仅显示协议标题与正文，不添加顶部导航、语言切换或品牌页脚。
 
 旧 https://itozll.github.io/meowdoku-legal/ 及 /privacy/ 链接保留；未删除旧仓库、未修改旧站点或游戏内协议链接。新站点确认可访问后再单独切换入口。
+
+Ring Titan 西班牙语与俄语隐私协议译文（2026-10-20，草案）：[Español](docs/ring-titan/es/privacy-policy.html) / [Русский](docs/ring-titan/ru/privacy-policy.html)。
