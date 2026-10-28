@@ -51,6 +51,7 @@ game-legal-hub/
 | --- | --- | --- | --- |
 | Meow Garden（meowdoku） | en、zh-CN/zh-Hans、zh-Hant、ja、ko、es、pt、ru | 原文迁入，生效日期 2026-10-07；俄语译文更新于 2026-10-14 | 原七种语言及简体别名：1.0.0-draft，未生效；俄语 missing |
 | Ring Titan | zh-CN、en、es、ru | 1.0.0-draft，未生效 | 中英：1.0.0-draft，未生效；西俄：missing |
+| BlockPop / 方块泡泡 | zh-CN、en、ru、ar | 1.0.0-draft，未生效 | missing |
 
 - [Ring Titan 中文隐私政策](docs/ring-titan/zh-CN/privacy-policy.md) / [English](docs/ring-titan/en/privacy-policy.md)
 - [Ring Titan 中文服务条款](docs/ring-titan/zh-CN/terms-of-service.md) / [English](docs/ring-titan/en/terms-of-service.md)
@@ -97,3 +98,5 @@ python -X utf8 tools/validate.py --migration-source ../meowdoku-cocos
 旧 https://itozll.github.io/meowdoku-legal/ 及 /privacy/ 链接保留；未删除旧仓库、未修改旧站点或游戏内协议链接。新站点确认可访问后再单独切换入口。
 
 Ring Titan 西班牙语与俄语隐私协议译文（2026-10-20，草案）：[Español](docs/ring-titan/es/privacy-policy.html) / [Русский](docs/ring-titan/ru/privacy-policy.html)。
+
+BlockPop 四语隐私草案与发布核对说明：[阅读入口](docs/blockpop/index.html) / [核对说明](docs/blockpop/README.md)。正文修改后运行 python tools/build-blockpop-privacy.py，同步生成 HTML；--check 仅校验一致性。

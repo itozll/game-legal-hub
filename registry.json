@@ -236,6 +236,76 @@
           }
         }
       }
+    },
+    {
+      "id": "blockpop",
+      "name": "BlockPop / 方块泡泡",
+      "locales": {
+        "zh-CN": {
+          "privacy-policy": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-28",
+            "effective_date": null,
+            "path": "docs/blockpop/zh-CN/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "en": {
+          "privacy-policy": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-28",
+            "effective_date": null,
+            "path": "docs/blockpop/en/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "ru": {
+          "privacy-policy": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-28",
+            "effective_date": null,
+            "path": "docs/blockpop/ru/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        },
+        "ar": {
+          "privacy-policy": {
+            "status": "draft",
+            "version": "1.0.0-draft",
+            "updated_date": "2026-10-28",
+            "effective_date": null,
+            "path": "docs/blockpop/ar/privacy-policy.md"
+          },
+          "terms-of-service": {
+            "status": "missing",
+            "version": null,
+            "updated_date": null,
+            "effective_date": null,
+            "path": null
+          }
+        }
+      }
     }
   ]
 }

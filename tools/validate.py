@@ -26,6 +26,7 @@ DRAFT_NOTICES = {
     'es': 'Estado: Borrador para publicación (todavía no vigente)',
     'pt': 'Estado: Rascunho para publicação (ainda sem vigência)',
     'ru': 'Статус: Проект для публикации (ещё не вступил в силу)',
+    'ar': 'الحالة: مسودة للنشر (غير سارية المفعول)',
 }
 
 
